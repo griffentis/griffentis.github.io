@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<!-- DRAFT TEMPLATE for legal review. Not legal advice. Have counsel review and adapt
-     (governing law, jurisdiction, liability limits) before relying on this. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Use — Griffentis</title>
+<title>Terms of Use | Griffentis</title>
 <meta name="robots" content="noindex">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png">
+<meta name="theme-color" content="#FAF8F5">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-  :root{--ivory:#F7F6F2;--graphite:#1E2227;--soft-black:#111;--violet:#6D28D9;--muted:#5D636B;--line:#E3E1D9}
+  /* Fonts are served from this site (assets/fonts), so no visitor data goes to a font provider */
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  :root{--ivory:#FAF8F5;--charcoal:#24212A;--aubergine:#34204F;--violet:#7650A4;--muted:#5F5968;--line:#E8E2D9}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Inter',system-ui,sans-serif;color:var(--graphite);background:var(--ivory);line-height:1.65;-webkit-font-smoothing:antialiased}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--charcoal);background:var(--ivory);line-height:1.65;-webkit-font-smoothing:antialiased}
   a{color:var(--violet);text-decoration:none}a:hover{text-decoration:underline}
   .wrap{max-width:760px;margin:0 auto;padding:0 32px}
   header{border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
-  .brand-logo{height:30px;width:auto;display:block}
+  /* Header spans the full width: logo at the left edge, navigation at the right edge */
+  header .wrap{max-width:none;padding:0 max(32px,3vw)}
+  .brand-logo{width:142px;height:32px;display:block}
   .back{font-size:14px;color:var(--muted)}
   main{padding:56px 0 72px}
-  h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(32px,5vw,46px);color:var(--soft-black);line-height:1.12;margin-bottom:10px}
+  h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(32px,5vw,46px);color:var(--aubergine);line-height:1.12;margin-bottom:10px}
   .updated{color:var(--muted);font-size:14px;margin-bottom:36px}
-  h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:24px;color:var(--soft-black);margin:34px 0 12px}
+  h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:24px;color:var(--aubergine);margin:34px 0 12px}
   p{margin-bottom:14px;font-size:16px}
   ul{margin:0 0 14px 22px}li{margin-bottom:8px;font-size:16px}
   .muted{color:var(--muted);font-size:15px}
@@ -34,16 +41,16 @@
 <body>
 <header>
   <div class="wrap nav">
-    <a href="index.html" aria-label="Griffentis home"><img class="brand-logo" src="assets/logo.png" alt="Griffentis" width="1264" height="285"></a>
+    <a href="index.html" aria-label="Griffentis home"><picture><source type="image/webp" srcset="assets/logo-header-142x32.webp 1x, assets/logo-header-284x64.webp 2x, assets/logo-header-426x96.webp 3x"><img class="brand-logo" src="assets/logo-header-284x64.png" alt="Griffentis" width="142" height="32"></picture></a>
     <a class="back" href="index.html">&larr; Back to home</a>
   </div>
 </header>
 <main>
   <div class="wrap">
     <h1>Terms of Use</h1>
-    <p class="updated">Last updated: [DATE]</p>
+    <p class="updated">Last updated: October 10, 2026</p>
 
-    <p>These Terms of Use ("Terms") govern your access to and use of the Griffentis website (the "Site"). By using the Site, you agree to these Terms. If you do not agree, please do not use the Site.</p>
+    <p>These Terms of Use ("Terms") govern your access to and use of this website (the "Site"), which is operated by Griffentis LLC, a California limited liability company ("Griffentis"). By using the Site, you agree to these Terms. If you do not agree, please do not use the Site.</p>
 
     <h2>Use of the Site</h2>
     <p>You may use the Site for lawful, informational purposes only. You agree not to misuse the Site, interfere with its operation, attempt unauthorized access, or use it in any way that could harm Griffentis or others.</p>
@@ -64,20 +71,23 @@
     <p>The Site is provided "as is" and "as available" without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement, to the fullest extent permitted by law.</p>
 
     <h2>Limitation of liability</h2>
-    <p>To the fullest extent permitted by law, Griffentis will not be liable for any indirect, incidental, consequential, or special damages arising from your use of, or inability to use, the Site. [Confirm scope and any cap with counsel.]</p>
+    <p>To the fullest extent permitted by law, Griffentis will not be liable for any damages of any kind arising from your use of, or inability to use, the Site, including direct, indirect, incidental, consequential, special, exemplary, or punitive damages. Where the law does not allow liability to be excluded entirely, the total liability of Griffentis for any claim relating to the Site will not exceed one hundred U.S. dollars (US $100). Nothing in these Terms limits liability that cannot be limited under applicable law.</p>
 
     <h2>Governing law</h2>
-    <p>These Terms are governed by the laws of [JURISDICTION], without regard to conflict-of-laws principles. Any disputes will be subject to the exclusive jurisdiction of the courts located in [JURISDICTION].</p>
+    <p>These Terms are governed by the laws of the State of California, without regard to conflict-of-laws principles. Any disputes will be subject to the exclusive jurisdiction of the state and federal courts located in San Diego County, California.</p>
 
     <h2>Changes to these Terms</h2>
-    <p>We may update these Terms from time to time. Continued use of the Site after changes take effect constitutes acceptance of the revised Terms.</p>
+    <p>We may update these Terms from time to time, and the "last updated" date above reflects the most recent version. Continued use of the Site after changes take effect constitutes acceptance of the revised Terms.</p>
+
+    <h2>General</h2>
+    <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in effect. A failure to enforce any provision is not a waiver of it. These Terms, together with the <a href="privacy.html">Privacy Notice</a> and the <a href="disclaimer.html">Disclaimer</a>, are the entire agreement between you and Griffentis regarding your use of the Site.</p>
 
     <h2>Contact</h2>
     <p>Questions about these Terms may be directed to <a href="mailto:info@griffentis.com">info@griffentis.com</a>.</p>
   </div>
 </main>
 <footer>
-  <div class="wrap">&copy; <span id="yr"></span> Griffentis. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy Notice</a> &nbsp;·&nbsp; <a href="disclaimer.html">Disclaimer</a></div>
+  <div class="wrap">&copy; <span id="yr"></span> Griffentis LLC. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy Notice</a> &nbsp;·&nbsp; <a href="disclaimer.html">Disclaimer</a></div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>

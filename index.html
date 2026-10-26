@@ -3,107 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Griffentis — Biotech Advisory, Medical Affairs &amp; Scientific Communications</title>
-<meta name="description" content="Griffentis is a boutique biotech advisory firm providing medical affairs consulting, scientific and medical communications, product and development strategy, and KOL engagement for emerging and clinical-stage biotech and pharma teams.">
+<title>Griffentis | Biotech Advisory, Medical Affairs &amp; Scientific Communications</title>
+<meta name="description" content="Griffentis is a boutique advisory firm helping biotech and pharma teams with medical affairs strategy, scientific narrative, and clinical development decisions.">
 
-<!-- TODO: set final domain, then update canonical + og:url + og:image below -->
+<!-- Canonical host is www.griffentis.com. If the site is served from the bare domain instead, update
+     canonical, og:url, og:image, twitter:image, the structured data below, sitemap.xml and robots.txt. -->
 <link rel="canonical" href="https://www.griffentis.com/">
 
-<!-- Favicon -->
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<!-- Favicon (winged G on ivory) -->
+<link rel="icon" href="assets/favicon.ico" sizes="48x48">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="assets/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png">
+<meta name="theme-color" content="#FAF8F5">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Griffentis">
-<meta property="og:title" content="Griffentis — Turning complex science into strategic impact">
-<meta property="og:description" content="Boutique biotech advisory, medical affairs, and scientific communications for emerging and clinical-stage life sciences teams.">
+<meta property="og:title" content="Griffentis | Complex science, translated into strategic impact">
+<meta property="og:description" content="Senior medical affairs, scientific strategy, and clinical development advisory for biotech and pharma teams.">
 <meta property="og:url" content="https://www.griffentis.com/">
-<meta property="og:image" content="https://www.griffentis.com/assets/hero.png">
-<meta property="og:image:alt" content="Griffentis griffin and DNA helix mark">
+<meta property="og:image" content="https://www.griffentis.com/assets/social-preview-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A lavender and violet griffin with a DNA helix in its wings, beside the Griffentis wordmark and tagline">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Griffentis — Turning complex science into strategic impact">
-<meta name="twitter:description" content="Boutique biotech advisory, medical affairs, and scientific communications for emerging and clinical-stage life sciences teams.">
-<meta name="twitter:image" content="https://www.griffentis.com/assets/hero.png">
+<meta name="twitter:title" content="Griffentis | Complex science, translated into strategic impact">
+<meta name="twitter:description" content="Senior medical affairs, scientific strategy, and clinical development advisory for biotech and pharma teams.">
+<meta name="twitter:image" content="https://www.griffentis.com/assets/social-preview-1200x630.jpg">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+  /* Fonts are served from this site (assets/fonts), so no visitor data goes to a font provider */
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/cormorant-garamond-italic-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Inter';font-style:italic;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
   :root{
-    --ivory:#F7F6F2;        /* warm ivory background */
-    --ivory-2:#F0EFEA;      /* slightly deeper ivory for alt sections */
-    --graphite:#1E2227;     /* primary text */
-    --soft-black:#111111;   /* logotype / emphasis */
-    --violet:#6D28D9;       /* scientific violet accent */
-    --violet-deep:#5B21B6;
-    --plum:#7C3A6B;         /* muted plum accent */
-    --lavender:#F3EEFA;     /* pale lavender tint */
-    --muted:#5D636B;        /* secondary text */
-    --line:#E3E1D9;         /* hairlines */
-    --line-soft:#ECEAE3;
+    --ivory:#FAF8F5;          /* warm ivory: main background */
+    --ivory-2:#F3EFE9;        /* deeper ivory: alternate sections */
+    --aubergine:#34204F;      /* deep aubergine: headings and dark sections */
+    --aubergine-deep:#2A1940; /* footer */
+    --charcoal:#24212A;       /* body text */
+    --violet:#7650A4;         /* royal violet: highlights, links, buttons */
+    --violet-deep:#5E3D8A;    /* hover state */
+    --lavender:#B6A1D5;       /* subtle decorative details */
+    --lavender-tint:#F1ECF7;  /* pale lavender wash */
+    --gold:#C6A05C;           /* champagne gold: fine rules and small accents only */
+    --muted:#5F5968;          /* secondary text */
+    --line:#E8E2D9;           /* hairlines */
+    --line-soft:#EFEAE3;
     --maxw:1140px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
     font-family:'Inter',system-ui,-apple-system,sans-serif;
-    color:var(--graphite);
+    color:var(--charcoal);
     background:var(--ivory);
     line-height:1.65;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
   }
-  h1,h2,h3{font-family:'Cormorant Garamond','Fraunces',Georgia,serif;font-weight:500;line-height:1.12;color:var(--soft-black);letter-spacing:-.01em}
+  h1,h2,h3{font-family:'Cormorant Garamond','Fraunces',Georgia,serif;font-weight:500;line-height:1.12;color:var(--aubergine);letter-spacing:-.01em}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
   .accent{color:var(--violet)}
+  .nw{white-space:nowrap}
 
   /* Keyboard focus states */
   a:focus-visible,button:focus-visible,.btn:focus-visible,.ritae-caption:focus-visible,.menu-toggle:focus-visible,.contact a.email:focus-visible{
     outline:2px solid var(--violet);outline-offset:3px;border-radius:6px}
-  .contact a.email:focus-visible{outline-color:#C9B4F2}
+  .contact a:focus-visible,footer a:focus-visible{outline-color:var(--lavender)}
+
+  /* Skip link: appears on keyboard focus */
+  .skip-link{position:absolute;left:16px;top:-64px;z-index:100;background:var(--violet);color:#fff;padding:10px 16px;border-radius:8px;font-size:14.5px;font-weight:500;transition:top .15s}
+  .skip-link:focus{top:12px}
+  main:focus{outline:none}
 
   /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(247,246,242,.82);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--line-soft)}
+  header{position:sticky;top:0;z-index:50;background:rgba(250,248,245,.86);-webkit-backdrop-filter:saturate(140%) blur(12px);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--line-soft)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  /* Header spans the full width: logo at the left edge, navigation at the right edge */
+  header .wrap{max-width:none;padding:0 max(32px,3vw)}
   .brand{display:flex;align-items:center;gap:11px}
-  .brand .mark{height:33px;width:auto;display:block}
-  .wordmark{font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:16px;color:var(--soft-black)}
-  .brand-logo{height:32px;width:auto;display:block}
-  .brand-logo-compact{height:34px;width:auto;display:none}
+  /* Header logo is drawn at its exact pixel size (1x, 2x, 3x files) so it stays crisp */
+  .brand-logo{width:142px;height:32px;display:block}
   .nav-links{display:flex;gap:34px;align-items:center}
   .nav-links a{font-size:14.5px;color:var(--muted);font-weight:500;transition:color .2s}
   .nav-links a.btn{color:#fff}
   .nav-links a.btn:hover{color:#fff}
-  .nav-links a:hover{color:var(--graphite)}
+  .nav-links a:hover{color:var(--aubergine)}
   .btn{display:inline-block;background:var(--violet);color:#fff;padding:11px 22px;border-radius:8px;font-weight:500;font-size:14.5px;transition:background .2s,transform .2s,box-shadow .2s;font-family:'Inter',sans-serif}
-  .btn:hover{background:var(--violet-deep);transform:translateY(-1px);box-shadow:0 8px 22px rgba(109,40,217,.22)}
-  .btn-ghost{background:transparent;color:var(--graphite);border:1px solid var(--line)}
+  .btn:hover{background:var(--violet-deep);transform:translateY(-1px);box-shadow:0 8px 22px rgba(118,80,164,.26)}
+  .btn-ghost{background:rgba(255,255,255,.55);color:var(--charcoal);border:1px solid #DDD3E6}
   .btn-ghost:hover{background:#fff;border-color:var(--violet);color:var(--violet);box-shadow:none;transform:translateY(-1px)}
-  .menu-toggle{display:none;background:none;border:0;font-size:26px;color:var(--graphite);cursor:pointer;line-height:1}
+  .menu-toggle{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-14px;background:none;border:0;font-size:26px;color:var(--aubergine);cursor:pointer;line-height:1}
 
-  /* Hero */
-  .hero{padding:80px 0;position:relative;overflow:hidden;background:var(--ivory)}
-  .hero-inner{display:grid;grid-template-columns:minmax(240px,clamp(300px,30vw,520px)) minmax(0,1fr);gap:44px;align-items:center;padding-right:max(32px,calc((100vw - 1160px)/2))}
-  .hero-art{width:100%;justify-self:start;height:auto;display:block;
-    -webkit-mask-image:radial-gradient(96% 100% at 50% 54%,#000 34%,rgba(0,0,0,0) 78%);
-    mask-image:radial-gradient(96% 100% at 50% 54%,#000 34%,rgba(0,0,0,0) 78%)}
-  .hero-art img{width:100%;height:auto;display:block;object-fit:contain}
-  .hero-text{max-width:760px}
-  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--violet);font-weight:600;margin-bottom:20px;font-family:'Inter',sans-serif;white-space:nowrap}
-  .hero h1{font-size:clamp(34px,4.4vw,56px);margin-bottom:20px;font-weight:500}
-  .hero p.lede{font-size:17px;color:var(--muted);max-width:800px;margin-bottom:32px;line-height:1.6}
+  /* Hero ("Art Meets Science"). The griffin artwork carries no words: logo and tagline are real HTML.
+     Phones and small tablets: artwork stacked above the text.
+     Mid widths: artwork on the left, text on the right.
+     Wide screens: the full painting runs edge to edge, with the text over its open right side. */
+  .hero{position:relative;overflow:hidden;background:var(--ivory);padding:0}
+  .hero-inner{position:relative}
+  .hero-art{display:block}
+  .hero-art img{display:block;width:100%;height:auto}
+  .hero-text{padding:4px 28px 60px;max-width:640px;margin:0 auto}
+  .hero-logo{display:block;margin-bottom:20px}
+  .hero-logo img{display:block;width:min(260px,72%);height:auto}
+  .hero-rule{width:56px;height:2px;border-radius:2px;background:var(--gold);margin-bottom:22px}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--violet);font-weight:600;margin-bottom:20px;font-family:'Inter',sans-serif}
+  /* Dot-separated eyebrow: phrases wrap whole, and a dot that would start a line is clipped away */
+  .eyebrow-list{display:flex;flex-wrap:wrap;column-gap:1.25em;row-gap:3px;overflow:hidden}
+  .eyebrow-list>span{position:relative;white-space:nowrap}
+  .eyebrow-list .sep{position:absolute;left:-.86em;top:0}
+  .hero .eyebrow{margin-bottom:16px}
+  .hero h1{font-size:clamp(34px,6vw,48px);margin-bottom:18px;font-weight:500}
+  .hero p.lede{font-size:17px;color:var(--muted);margin-bottom:30px;line-height:1.6}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* Below 1280px the squarer artwork is used. Its painted area stops just short of the file's
+     edges, so nudge it to run off the left of the screen and dissolve its right edge. */
+  @media(max-width:1279px){
+    .hero-art img{width:100.6%;max-width:none;margin-left:-.6%}
+    .hero-art{-webkit-mask-image:linear-gradient(to right,#000 89.6%,rgba(0,0,0,0) 93.6%);mask-image:linear-gradient(to right,#000 89.6%,rgba(0,0,0,0) 93.6%)}
+  }
+  @media(max-width:520px){
+    .hero-logo img{width:min(210px,62%)}
+  }
+  @media(min-width:881px) and (max-width:1279px){
+    .hero-inner{display:grid;grid-template-columns:38% minmax(0,1fr);align-items:center}
+    .hero-text{padding:40px 36px 40px 16px;max-width:640px;margin:0}
+    .hero-logo img{width:min(320px,80%)}
+    .hero h1{font-size:clamp(34px,3.7vw,42px)}
+    .hero p.lede{font-size:16px;margin-bottom:26px}
+  }
+  @media(min-width:1280px){
+    /* The painting stands on the bottom edge of the hero at about two thirds of the screen width,
+       leaving the right side for the name and tagline. Its wing tips dissolve upward and its open
+       right side dissolves into the page; the feathers still run off the left of the screen. */
+    .hero{--hero-h:clamp(420px,32vw,820px)}
+    .hero-inner{display:flex;align-items:center;min-height:var(--hero-h);padding-right:max(32px,3vw)}
+    .hero-art{position:absolute;left:0;bottom:0;width:calc(var(--hero-h) * 2);
+      --fade-top:linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 11%);
+      --fade-right:linear-gradient(to right,#000 76%,rgba(0,0,0,0) 99%);
+      -webkit-mask-image:var(--fade-top),var(--fade-right);-webkit-mask-composite:source-in;
+      mask-image:var(--fade-top),var(--fade-right);mask-composite:intersect}
+    .hero-art img{width:100%;height:var(--hero-h);object-fit:cover;object-position:left bottom}
+    .hero-text{position:relative;z-index:1;margin:0 0 0 calc(var(--hero-h) * 1.45);padding:48px 0;max-width:clamp(480px,42vw,700px)}
+    .hero-logo img{width:clamp(340px,29vw,480px)}
+    .hero h1{font-size:clamp(35px,3.05vw,50px)}
+    .hero p.lede{font-size:clamp(15.5px,1.15vw,17px);margin-bottom:clamp(22px,2vw,30px)}
+    .hero-cta{gap:10px}
+    .hero-cta .btn{padding:11px clamp(16px,1.5vw,22px)}
+  }
 
   /* Positioning band */
   .positioning{padding:60px 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:var(--ivory-2)}
   .positioning .wrap{max-width:880px;text-align:center}
-  .positioning p{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3.2vw,34px);line-height:1.35;color:var(--graphite);font-weight:500}
+  .positioning p{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3.2vw,34px);line-height:1.35;color:var(--aubergine);font-weight:500}
   .positioning p .accent{color:var(--violet)}
 
   /* Sections */
@@ -118,15 +180,15 @@
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 28px;transition:transform .22s,box-shadow .22s,border-color .22s;position:relative}
   .alt .card{background:var(--ivory)}
-  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,34,39,.08);border-color:#D9D3E8}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(52,32,79,.09);border-color:#D6C9E8}
   .card .ic{width:34px;height:34px;margin-bottom:18px;color:var(--violet)}
   .card h3{font-size:23px;margin:0 0 10px;font-weight:600}
   .card p{color:var(--muted);font-size:15px;line-height:1.6}
 
-  /* How we help — process steps */
+  /* How we help: process steps */
   .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:38px 60px}
   .step{display:flex;gap:20px}
-  .step .idx{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:var(--lavender);color:var(--violet);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;border:1px solid #E4DAF4}
+  .step .idx{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:var(--lavender-tint);color:var(--violet);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;border:1px solid #DDD0EE}
   .step h3{font-size:21px;margin-bottom:7px;font-weight:600}
   .step p{color:var(--muted);font-size:15px;line-height:1.6}
 
@@ -140,92 +202,99 @@
 
   /* About */
   .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
-  .about-portrait{border-radius:16px;background:linear-gradient(160deg,var(--lavender),var(--ivory-2));border:1px solid var(--line);overflow:hidden;margin-top:92px}
-  .about-portrait svg{width:62%;height:auto;opacity:.9}
+  .about-portrait{border-radius:16px;background:linear-gradient(160deg,var(--lavender-tint),var(--ivory-2));border:1px solid var(--line);overflow:hidden;margin-top:92px}
   .about-portrait picture{display:block}
   .about-portrait img{width:100%;height:auto;display:block}
-  .about-portrait small{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:var(--muted);font-size:12px}
-  .about-media{margin-top:92px}
-  .about-media .about-portrait{margin-top:0}
-  .ritae-wrap{position:relative;display:block;margin-top:12px;text-align:center}
+  .about-media{margin-top:92px;position:relative}
+  .about-media .about-portrait{margin-top:0;cursor:help}
+  .ritae-wrap{display:block;margin-top:12px;text-align:center}
   .ritae-caption{display:inline-block;background:none;border:0;cursor:help;padding:2px 4px;
     font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--muted);
     letter-spacing:.01em;transition:color .2s}
-  .ritae-wrap:hover .ritae-caption{color:var(--violet)}
-  /* Myth easter-egg hover popover */
-  .myth-pop{position:absolute;bottom:100%;left:50%;width:min(420px,86vw);z-index:60;text-align:left;
-    transform:translateX(-50%) translateY(-2px);
+  .ritae-wrap.open .ritae-caption{color:var(--violet)}
+  /* Myth easter egg. Opens from the portrait or its caption: beside the portrait on desktop
+     (so the picture stays visible), below the caption on small screens. */
+  .myth-pop{--pop-rest:translateX(-8px);--pop-open:translateX(0);position:absolute;top:-70px;left:calc(100% + 20px);width:min(420px,86vw);z-index:60;text-align:left;
+    transform:var(--pop-rest);
     background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:30px 32px 28px;
-    box-shadow:0 26px 70px rgba(17,17,17,.26);
+    box-shadow:0 26px 70px rgba(36,24,56,.26);
     opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,transform .22s ease}
-  .myth-pop::after{content:"";position:absolute;bottom:-16px;left:0;right:0;height:16px}
-  .ritae-wrap:hover .myth-pop,.ritae-wrap.open .myth-pop,.myth-pop:hover{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(-8px)}
+  /* Invisible bridge so the pointer can travel from the portrait to the popover without closing it */
+  .myth-pop::after{content:"";position:absolute;top:0;bottom:0;left:-22px;width:22px}
+  .ritae-wrap.open .myth-pop{opacity:1;visibility:visible;pointer-events:auto;transform:var(--pop-open)}
+  /* Hover opens it only where there is a real pointer, after a brief pause so a passing cursor
+     does not trigger it; on touch screens a tap toggles it */
+  @media (hover:hover){
+    .about-media:hover .ritae-caption{color:var(--violet)}
+    .about-media:hover .myth-pop,.myth-pop:hover{opacity:1;visibility:visible;pointer-events:auto;transform:var(--pop-open);
+      transition:opacity .22s ease .15s,transform .22s ease .15s,visibility 0s linear .15s}
+  }
+  .myth-close{display:none;position:absolute;top:4px;right:6px;width:44px;height:44px;background:none;border:0;border-radius:50%;color:var(--muted);font-size:24px;line-height:1;cursor:pointer}
+  @media (hover:none){.myth-close{display:block}}
   .myth-pop .myth-eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--violet);font-weight:600;margin-bottom:12px}
-  .myth-pop h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:27px;color:var(--soft-black);line-height:1.14;margin-bottom:16px}
-  .myth-pop p{color:var(--graphite);font-size:15px;line-height:1.62;margin-bottom:12px}
+  .myth-pop h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:27px;color:var(--aubergine);line-height:1.14;margin-bottom:16px}
+  .myth-pop p{color:var(--charcoal);font-size:15px;line-height:1.62;margin-bottom:12px}
   .myth-pop p:last-child{margin-bottom:0;color:var(--muted)}
   .about-body .eyebrow{margin-bottom:14px}
   .about-body h2{font-size:clamp(28px,3.4vw,40px);margin:0 0 22px;font-weight:500}
-  .about-body p{margin-bottom:16px;color:var(--graphite);font-size:16.5px}
+  .about-body p{margin-bottom:16px;color:var(--charcoal);font-size:16.5px}
   .about-body p.muted{color:var(--muted)}
-  .edit{background:var(--lavender);border-bottom:1px solid var(--violet);padding:1px 5px;border-radius:3px;font-size:.96em}
+  .text-link{color:var(--violet);border-bottom:1px solid rgba(118,80,164,.4);transition:color .2s,border-color .2s}
+  .text-link:hover{color:var(--violet-deep);border-color:var(--violet-deep)}
 
-  /* Contact */
-  .contact{background:var(--graphite);color:var(--ivory);position:relative;overflow:hidden}
+  /* Contact: deep aubergine */
+  .contact{background:var(--aubergine);color:var(--ivory);position:relative;overflow:hidden}
   .contact h2{color:#fff}
-  .contact .eyebrow{color:#B79CEE}
+  .contact .eyebrow{color:var(--lavender)}
   .contact .section-head{margin-bottom:0;position:relative;z-index:2}
-  .contact p{color:#B6BAC0;font-size:17.5px;max-width:56ch}
+  .contact p{color:#D5CCE3;font-size:17.5px;max-width:56ch}
   .contact-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:32px}
-  .contact a.email{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.4vw,40px);color:#fff;border-bottom:2px solid var(--violet);padding-bottom:3px;transition:border-color .2s,color .2s;font-weight:500}
-  .contact a.email:hover{color:#C9B4F2;border-color:#C9B4F2}
-  .contact .bg-wing{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:520px;opacity:.16;z-index:1;pointer-events:none}
+  .contact a.email{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.4vw,40px);color:#fff;border-bottom:2px solid var(--gold);padding-bottom:3px;transition:border-color .2s,color .2s;font-weight:500}
+  .contact a.email:hover{color:#E3D8F3;border-color:var(--lavender)}
+  .contact .bg-wing{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:520px;opacity:.26;z-index:1;pointer-events:none}
 
-  footer{background:var(--graphite);color:#8B9098;padding:30px 0;border-top:1px solid rgba(255,255,255,.08);font-size:13.5px;position:relative;z-index:2}
+  footer{background:var(--aubergine-deep);color:#B9AFCB;padding:30px 0;border-top:1px solid rgba(255,255,255,.08);font-size:13.5px;position:relative;z-index:2}
   .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
   .foot-brand{display:flex;align-items:center;gap:12px}
   .foot-brand img{height:36px;width:auto;opacity:.95}
 
   /* Common engagements */
   .engage{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
-  .engage li{list-style:none;display:flex;gap:13px;align-items:flex-start;color:var(--graphite);font-size:16px;line-height:1.55;padding:4px 0}
-  .engage li .dot{flex:0 0 auto;width:7px;height:7px;border-radius:50%;background:var(--violet);margin-top:10px}
+  .engage li{list-style:none;display:flex;gap:13px;align-items:flex-start;color:var(--charcoal);font-size:16px;line-height:1.55;padding:4px 0}
+  .engage li .dot{flex:0 0 auto;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-top:10px}
 
   /* Who we work with */
   .work-with{display:grid;grid-template-columns:1fr;gap:22px;max-width:920px}
-  .work-with p{color:var(--graphite);font-size:17px;line-height:1.65}
+  .work-with p{color:var(--charcoal);font-size:17px;line-height:1.65}
   .work-with p.muted{color:var(--muted);font-size:16px}
-  .client-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
-  .client-tags span{font-size:13.5px;color:var(--violet);background:var(--lavender);border:1px solid #E4DAF4;border-radius:999px;padding:7px 15px;font-weight:500}
 
   /* Contact intake + confidentiality */
   .intake{margin-top:26px;max-width:60ch}
-  .intake p{font-size:15px;color:#B6BAC0;margin-bottom:10px}
-  .intake .confidential{color:#D7C6F5;font-size:14px;border-left:2px solid #9A73E8;padding-left:14px;margin-top:14px}
+  .intake p{font-size:15px;color:#CBC1DA;margin-bottom:10px}
+  .intake .confidential{color:#E6DCF3;font-size:14px;border-left:2px solid var(--gold);padding-left:14px;margin-top:14px}
 
   /* Footer legal nav */
   .foot-legal{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
-  .foot-legal a{color:#9CA1A8;transition:color .2s}
-  .foot-legal a:hover{color:#C9B4F2}
-  .foot-disclaimer{color:#6E747C;font-size:12px;line-height:1.6;margin-top:14px;max-width:80ch}
+  .foot-legal a{color:#C4BAD5;transition:color .2s}
+  .foot-legal a:hover{color:#fff}
+  .foot-disclaimer{color:#A99FBB;font-size:12px;line-height:1.6;margin-top:14px;max-width:80ch}
 
-  /* Decorative thin connecting line above sections */
-  .lead-line{width:54px;height:2px;background:linear-gradient(90deg,var(--violet),transparent);margin-bottom:24px;border-radius:2px}
+  /* Fine champagne-gold rule above each section heading */
+  .lead-line{width:54px;height:2px;background:linear-gradient(90deg,var(--gold),rgba(198,160,92,0));margin-bottom:24px;border-radius:2px}
 
   @media(max-width:880px){
-    .brand-logo{display:none}
-    .brand-logo-compact{display:block}
     .nav-links{display:none}
-    .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--ivory);border-bottom:1px solid var(--line);padding:18px 32px;gap:18px}
-    .menu-toggle{display:block}
+    .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;align-items:stretch;text-align:center;background:var(--ivory);border-bottom:1px solid var(--line);padding:10px 32px 20px;gap:2px}
+    .nav-links.open a{padding:10px 0}
+    .nav-links.open a.btn{align-self:center;padding:11px 22px;margin-top:8px}
+    .menu-toggle{display:flex}
     .about-grid{grid-template-columns:1fr;gap:44px}
     .about-portrait{margin-top:0}
     .about-media{margin-top:0}
-    .hero{padding:56px 0 52px}
-    .hero-inner{grid-template-columns:1fr;gap:26px;padding:0 28px}
-    .hero-art{order:-1;width:62%;max-width:300px;justify-self:center}
-    .hero-text{max-width:100%}
-    .eyebrow{white-space:normal}
+    .ritae-wrap{position:relative}
+    .myth-pop{--pop-rest:translateX(-50%) translateY(2px);--pop-open:translateX(-50%) translateY(8px);top:100%;left:50%;padding:48px 24px 24px}
+    .myth-pop::after{top:-16px;bottom:auto;left:0;right:0;width:auto;height:16px}
+    .myth-close{display:block}
     .cards{grid-template-columns:1fr}
     .engage{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr;gap:30px}
@@ -233,19 +302,27 @@
     .diff{border-right:none;border-bottom:1px solid var(--line)}
     .diff:last-child{border-bottom:none}
     section{padding:68px 0}
+    .hero{padding:0}
     .contact .bg-wing{display:none}
   }
+
+  /* Respect the visitor's reduced-motion setting */
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{transition-duration:.01ms!important}
+    .btn:hover,.btn-ghost:hover,.card:hover{transform:none}
+  }
 </style>
-<!-- TODO: set final url/logo domain once confirmed -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Griffentis",
-  "description": "Boutique biotech advisory firm providing medical affairs strategy, scientific and medical communications, clinical and translational strategy, KOL and stakeholder engagement, and partnering support for emerging and clinical-stage biotech and pharma teams.",
+  "legalName": "Griffentis LLC",
+  "description": "Boutique advisory firm providing medical affairs strategy, scientific narrative and publications, and development and external innovation strategy for biotech and pharma teams.",
   "url": "https://www.griffentis.com/",
-  "logo": "https://www.griffentis.com/assets/logo.png",
-  "image": "https://www.griffentis.com/assets/hero.png",
+  "logo": "https://www.griffentis.com/assets/logo-primary-transparent-1264x285.png",
+  "image": "https://www.griffentis.com/assets/social-preview-1200x630.jpg",
   "email": "info@griffentis.com",
   "areaServed": "Global",
   "knowsAbout": [
@@ -263,14 +340,14 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="Griffentis home">
-      <img class="brand-logo" src="assets/logo.png" alt="Griffentis" width="1264" height="285">
-      <img class="brand-logo-compact" src="assets/griffin-mark.png" alt="Griffentis" width="385" height="268">
+      <picture><source type="image/webp" srcset="assets/logo-header-142x32.webp 1x, assets/logo-header-284x64.webp 2x, assets/logo-header-426x96.webp 3x"><img class="brand-logo" src="assets/logo-header-284x64.png" alt="Griffentis" width="142" height="32"></picture>
     </a>
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
       <a href="#services">Services</a>
       <a href="#how">How we help</a>
       <a href="#why">Why Griffentis</a>
@@ -282,18 +359,27 @@
 </header>
 
 <a id="top"></a>
+<main id="main" tabindex="-1">
 <section class="hero">
   <div class="hero-inner">
     <picture class="hero-art">
-      <source srcset="assets/hero.webp" type="image/webp">
-      <img src="assets/hero.png" alt="Abstract griffin with DNA helix, in lavender and violet" width="903" height="894" fetchpriority="high" decoding="async">
+      <source media="(min-width:1280px)" type="image/webp" srcset="assets/hero-artwork-only-desktop-1280x640.webp 1280w, assets/hero-artwork-only-desktop-1920x960.webp 1920w" sizes="(min-width:2560px) 1640px, (min-width:1313px) 64vw, 840px" width="1920" height="960">
+      <source media="(min-width:1280px)" srcset="assets/hero-artwork-only-desktop-1280x640.jpg" width="1280" height="640">
+      <source type="image/webp" srcset="assets/hero-artwork-only-mobile-768x640.webp 768w, assets/hero-artwork-only-mobile-1200x1000.webp 1200w" sizes="(min-width:881px) 38vw, 100vw" width="1200" height="1000">
+      <img src="assets/hero-artwork-only-mobile-768x640.jpg" alt="A griffin with a DNA helix woven through its wings, painted in lavender, violet and gold" width="768" height="640" fetchpriority="high">
     </picture>
     <div class="hero-text">
-      <div class="eyebrow">Biotech advisory · Medical affairs · Medical communications</div>
-      <h1>Turning complex science into<br><span class="accent">strategic impact.</span></h1>
-      <p class="lede">Griffentis helps biotech innovators sharpen the scientific narrative, build medical affairs strategy, and engage the stakeholders who shape a program's trajectory.</p>
+      <picture class="hero-logo"><source type="image/webp" srcset="assets/logo-primary-transparent-632x143.webp 632w, assets/logo-primary-transparent-1264x285.webp 1264w" sizes="(min-width:1280px) 29vw, (min-width:881px) 320px, (min-width:521px) 260px, 210px"><img src="assets/logo-primary-transparent-1264x285.png" alt="Griffentis" width="1264" height="285"></picture>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <div class="eyebrow eyebrow-list">
+        <span>Medical affairs</span>
+        <span><span class="sep" aria-hidden="true">·</span> Scientific strategy</span>
+        <span><span class="sep" aria-hidden="true">·</span> Clinical development</span>
+      </div>
+      <h1>Complex science, <span class="nw">translated into</span><br><span class="accent">strategic impact.</span></h1>
+      <p class="lede">Griffentis helps biotech and pharma innovators build medical affairs strategy, sharpen the scientific narrative, and guide the clinical development decisions that shape a program's trajectory.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn">Start a conversation</a>
+        <a href="#contact" class="btn">Discuss a program</a>
         <a href="#services" class="btn btn-ghost">Explore services</a>
       </div>
     </div>
@@ -302,7 +388,7 @@
 
 <div class="positioning">
   <div class="wrap">
-    <p>Griffentis sits at the intersection of <span class="accent">science, strategy, and communication</span> — helping biotech leaders make the complex understood and the rigorous persuasive.</p>
+    <p>Griffentis works where <span class="accent">science, strategy, and execution</span> meet, helping biotech and pharma leaders make complex science clear, credible, and strategically actionable.</p>
   </div>
 </div>
 
@@ -316,34 +402,19 @@
     </div>
     <div class="cards">
       <div class="card">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-9"/><circle cx="8" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg>
-        <h3>Medical Affairs Strategy</h3>
-        <p>Medical strategy and launch readiness, evidence-generation planning, and the integrated medical plan that aligns science with program goals.</p>
+        <svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-9"/><circle cx="8" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg>
+        <h3>Medical Affairs Strategy and Build</h3>
+        <p>Pre-launch and launch readiness, lifecycle planning, and the design and optimization of medical affairs functions, including field medical, medical information, medical education, and publications.</p>
       </div>
       <div class="card">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
-        <h3>Scientific &amp; Medical Communications</h3>
-        <p>Scientific narrative, publication and data-disclosure strategy, and clear, defensible materials that distinguish evidence from hypothesis.</p>
+        <svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
+        <h3>Scientific Narrative and Publications</h3>
+        <p>Scientific narrative development, publication and congress strategy, data-disclosure planning, and the medical writing to execute it. Clear, balanced, evidence-based materials, tailored to each audience.</p>
       </div>
       <div class="card">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3.2"/><circle cx="17" cy="15" r="2.6"/><path d="M10.5 10.5l4 3"/><path d="M3 20c.6-2.6 2.6-4 5-4"/></svg>
-        <h3>KOL &amp; Stakeholder Engagement</h3>
-        <p>Advisory boards, KOL mapping and engagement plans, and the stakeholder strategy that builds scientific credibility and durable relationships.</p>
-      </div>
-      <div class="card">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6"/><path d="M12 9c-3 0-5 2-5 5a5 5 0 0010 0c0-3-2-5-5-5z"/><path d="M9 14h6"/></svg>
-        <h3>Clinical &amp; Translational Strategy</h3>
-        <p>Mechanistic rationale, biomarker and reverse-translation input, and study-design perspective that connects endpoints to the value story.</p>
-      </div>
-      <div class="card">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="2.4"/><circle cx="17" cy="17" r="2.4"/><path d="M9 9l6 6"/><path d="M14 6h4v4"/></svg>
-        <h3>External Innovation &amp; Partnering</h3>
-        <p>The partnering narrative for licensing and collaboration: search-and-evaluation support and a story that positions the asset for the right partner.</p>
-      </div>
-      <div class="card">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg>
-        <h3>Advisory for Founders &amp; Execs</h3>
-        <p>A trusted scientific-strategic counterpart for biotech executives and founders shaping high-stakes decisions, narratives, and board conversations.</p>
+        <svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="2.4"/><circle cx="17" cy="17" r="2.4"/><path d="M9 9l6 6"/><path d="M14 6h4v4"/></svg>
+        <h3>Development and External Innovation Strategy</h3>
+        <p>Translational rationale, study-design perspective, the partnering narrative, non-dilutive funding strategy, and diligence support. For programs deciding where to go next and how to fund it.</p>
       </div>
     </div>
   </div>
@@ -355,17 +426,16 @@
       <div class="lead-line"></div>
       <div class="eyebrow">Common engagements</div>
       <h2>Concrete ways clients work with Griffentis</h2>
-      <p>Engagements are scoped to the decision in front of you, from a focused review to ongoing strategic counsel.</p>
+      <p>Engagements are scoped to the decision in front of you, from a single document or focused review to an ongoing advisory relationship.</p>
     </div>
     <ul class="engage">
-      <li><span class="dot"></span>Scientific narrative audit and development</li>
+      <li><span class="dot"></span>Medical writing and scientific document development</li>
+      <li><span class="dot"></span>Scientific platform development</li>
       <li><span class="dot"></span>Medical affairs launch-readiness review</li>
       <li><span class="dot"></span>KOL mapping and advisory board strategy</li>
       <li><span class="dot"></span>Publication and data-disclosure strategy</li>
       <li><span class="dot"></span>Clinical and translational strategy input</li>
       <li><span class="dot"></span>Partnering narrative and diligence support</li>
-      <li><span class="dot"></span>Evidence-generation and integrated medical planning</li>
-      <li><span class="dot"></span>Executive scientific-strategy counsel</li>
     </ul>
   </div>
 </section>
@@ -376,7 +446,7 @@
       <div class="lead-line"></div>
       <div class="eyebrow">How Griffentis helps</div>
       <h2>From complex science to a story that moves decisions</h2>
-      <p>Every engagement follows the same discipline: understand the science deeply, then shape it into strategy and communication that earns the confidence of investors, partners, regulators, and peers.</p>
+      <p>Every engagement follows the same discipline: understand the science deeply, then shape it into strategy and communication that are clear, accurate, and fit for the audience.</p>
     </div>
     <div class="steps">
       <div class="step">
@@ -397,14 +467,14 @@
         <div class="idx">03</div>
         <div>
           <h3>Shape the narrative</h3>
-          <p>We craft the scientific story and supporting materials so that the complex becomes clear and the rigorous becomes persuasive for each audience.</p>
+          <p>We craft the scientific story and supporting materials so that complex science is clear and accurate for each audience.</p>
         </div>
       </div>
       <div class="step">
         <div class="idx">04</div>
         <div>
           <h3>Engage the stakeholders</h3>
-          <p>We build the KOL, advisory, and stakeholder plans that carry the science into the field and convert credibility into momentum.</p>
+          <p>We build the KOL, advisory, and stakeholder plans that carry the science into the field, grounded in legitimate scientific exchange.</p>
         </div>
       </div>
     </div>
@@ -417,13 +487,13 @@
       <div class="lead-line"></div>
       <div class="eyebrow">Why Griffentis</div>
       <h2>Science, strategy, and communication in one place</h2>
-      <p>Most teams have to assemble these capabilities from separate advisors. Griffentis brings them together, led by a senior operator who has lived all three.</p>
+      <p>Most teams have to assemble these capabilities from separate advisors. Griffentis brings them together in a single senior-led practice.</p>
     </div>
     <div class="diff-grid">
       <div class="diff">
         <div class="tag">Science</div>
         <h3>Real scientific depth</h3>
-        <p>Grounded in molecular biology, translational science, and clinical development — so the strategy and the story hold up to expert scrutiny, not just a polished surface.</p>
+        <p>Grounded in molecular biology, translational science, and clinical development, so the strategy and the story hold up to expert scrutiny, not just a polished surface.</p>
       </div>
       <div class="diff">
         <div class="tag">Strategy</div>
@@ -432,8 +502,8 @@
       </div>
       <div class="diff">
         <div class="tag">Communication</div>
-        <h3>Clarity that persuades</h3>
-        <p>The ability to make complex science clear and defensible for boards, investors, partners, and peers — without overclaiming or losing the nuance.</p>
+        <h3>Clarity without overstatement</h3>
+        <p>The ability to make complex science clear and accurate for boards, investors, partners, and peers, without oversimplifying the data or omitting its limitations.</p>
       </div>
     </div>
   </div>
@@ -447,16 +517,8 @@
       <h2>Senior support without building a large internal function</h2>
     </div>
     <div class="work-with">
-      <p>Griffentis works with small and mid-sized biotech and pharma teams that need senior scientific, medical affairs, and strategic communications support without building a large internal function.</p>
+      <p>Griffentis works with small and mid-sized biotech and pharma teams that need senior scientific, medical affairs, and strategic communications support.</p>
       <p class="muted">Typical clients include founder-led biotech companies, clinical-stage teams, medical affairs and scientific communications leaders, product and development teams, and organizations preparing for financing, partnering, lifecycle, or stakeholder engagement decisions.</p>
-      <div class="client-tags">
-        <span>Founder-led biotech</span>
-        <span>Clinical-stage teams</span>
-        <span>Medical affairs leaders</span>
-        <span>Scientific communications</span>
-        <span>Product &amp; development teams</span>
-        <span>BD &amp; partnering</span>
-      </div>
     </div>
   </div>
 </section>
@@ -470,22 +532,23 @@
           <img src="assets/about-griffin.png" alt="Griffentis griffin" width="1100" height="825" loading="lazy" decoding="async">
         </picture>
       </div>
-      <span class="ritae-wrap">
+      <div class="ritae-wrap">
         <button type="button" class="ritae-caption" id="ritaeCaption" aria-expanded="false" aria-controls="mythPop">Ritae Griffenticas</button>
         <div class="myth-pop" id="mythPop" role="region" aria-label="The myth of Ritae Griffenticas">
+          <button type="button" class="myth-close" id="mythClose" aria-label="Close">&times;</button>
           <div class="myth-eyebrow">Field notes · genus <em>Griffenticas</em></div>
           <h3>The Myth of Ritae Griffenticas</h3>
           <p>Legend says the <em>Ritae Griffenticas</em> is ancestor to the tiny guardians once kept beside kings: small in stature, sharp in judgment, and impossible to distract from what mattered.</p>
           <p>Perched above the valley, she watched over winding paths, hidden risks, and decisions that could shape entire kingdoms. With a narrowed eye and silver crest, she saw the pattern others missed and guided travelers toward the clearest path.</p>
           <p>Today, her spirit lives on at Griffentis: bringing clarity, strategy, and perspective to complexity across biotech, medical affairs, and medical communications.</p>
         </div>
-      </span>
+      </div>
     </div>
     <div class="about-body">
       <div class="eyebrow">About</div>
       <h2>Built on deep life sciences experience</h2>
-      <p>Griffentis was founded by [Founder name], a senior biotech and pharma leader with experience spanning molecular biology, translational science, medical affairs, clinical development, and external innovation and business development.</p>
-      <p class="muted">Across roles in [academia and industry], [Founder name] has [built medical affairs functions, shaped scientific narratives from discovery through launch, and supported partnering and licensing decisions]. Griffentis brings that operator perspective to founders and executives navigating high-stakes scientific and strategic decisions.</p>
+      <p>Griffentis was founded by <a class="text-link" href="https://www.linkedin.com/in/mirtagrifman/" target="_blank" rel="noopener">Mirta Grifman, PhD</a>, a senior biotech and pharma leader with 25 years of industry experience spanning molecular biology, translational science, medical affairs, clinical development, external innovation, and business development.</p>
+      <p class="muted">Dr. Grifman has built medical affairs functions, shaped scientific narratives from discovery through launch, and supported partnering and licensing decisions. Griffentis brings that operator perspective to founders and executives navigating high-stakes scientific and strategic decisions.</p>
       <p class="muted">The name draws on the griffin, a guardian that pairs vision with strength, as a quiet emblem of science guided by judgment.</p>
     </div>
   </div>
@@ -493,7 +556,7 @@
 
 <section id="contact" class="contact">
   <svg class="bg-wing" viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <g fill="none" stroke="#9A73E8" stroke-width="2" stroke-linecap="round">
+    <g fill="none" stroke="#B6A1D5" stroke-width="2" stroke-linecap="round">
       <path d="M70 300 C180 250, 300 190, 500 70"/>
       <path d="M80 312 C190 272, 320 215, 470 108"/>
       <path d="M92 324 C200 296, 320 250, 440 150"/>
@@ -503,31 +566,31 @@
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Contact</div>
-      <h2>Let's talk through the science in front of you</h2>
-      <p>Whether you are shaping a medical strategy, building the scientific narrative, or preparing for a partnering conversation, Griffentis can help you think it through.</p>
+      <h2>Talk through the science in front of you</h2>
+      <p>Whether you need a medical strategy shaped, a scientific narrative built, or the documents themselves written, Griffentis can help you think it through and deliver the finished work.</p>
       <div class="contact-row">
-        <a class="email" href="mailto:info@griffentis.com">info@griffentis.com</a>
+        <a class="email" href="mailto:info@griffentis.com?subject=Griffentis%20inquiry">info@griffentis.com</a>
       </div>
       <div class="intake">
-        <p>To help assess fit, please include the asset stage, therapeutic area, decision point, timeline, and whether confidentiality restrictions apply.</p>
         <p class="confidential">Please do not send confidential, proprietary, clinical, patient, or regulated information until an appropriate confidentiality agreement is in place.</p>
       </div>
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
     <div class="foot">
-      <span class="foot-brand"><img src="assets/winged-g-light.png" alt="Griffentis winged G mark" width="35" height="36">© <span id="yr"></span> Griffentis. All rights reserved.</span>
+      <span class="foot-brand"><img src="assets/winged-g-light.png" alt="" width="35" height="36"><span>© <span id="yr"></span> Griffentis LLC. All rights reserved.</span></span>
       <nav class="foot-legal" aria-label="Legal and social">
         <a href="privacy.html">Privacy Notice</a>
         <a href="terms.html">Terms of Use</a>
         <a href="disclaimer.html">Disclaimer</a>
-        <!-- TODO: add LinkedIn once available: <a href="https://www.linkedin.com/in/..." target="_blank" rel="noopener">LinkedIn</a> -->
+        <a href="https://www.linkedin.com/in/mirtagrifman/" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
     </div>
-    <p class="foot-disclaimer">Griffentis provides strategic advisory and consulting services. Information on this website is provided for general informational purposes only and does not constitute medical, legal, regulatory, tax, investment, or clinical advice.</p>
+    <p class="foot-disclaimer">Griffentis provides strategic advisory, consulting, and medical writing services. Information on this website is provided for general informational purposes only and does not constitute medical, legal, regulatory, tax, investment, or clinical advice.</p>
   </div>
 </footer>
 
@@ -548,18 +611,24 @@
     nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setOpen(false);});});
   })();
 
-  // Ritae Griffenticas: hover on desktop (CSS), tap/keyboard to toggle
+  // Ritae Griffenticas: hover the portrait or its caption on desktop (CSS); tap, click or keyboard to toggle
   (function(){
     var wrap=document.querySelector('.ritae-wrap');
     var cap=document.getElementById('ritaeCaption');
-    if(!wrap||!cap) return;
+    var media=document.querySelector('.about-media');
+    var portrait=document.querySelector('.about-portrait');
+    if(!wrap||!cap||!media) return;
     function setOpen(open){
       wrap.classList.toggle('open',open);
       cap.setAttribute('aria-expanded',open?'true':'false');
     }
-    cap.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();setOpen(!wrap.classList.contains('open'));});
-    document.addEventListener('click',function(e){if(!wrap.contains(e.target))setOpen(false);});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'){setOpen(false);cap.focus();}});
+    function toggle(e){e.preventDefault();e.stopPropagation();setOpen(!wrap.classList.contains('open'));}
+    cap.addEventListener('click',toggle);
+    if(portrait) portrait.addEventListener('click',toggle);
+    var closeBtn=document.getElementById('mythClose');
+    if(closeBtn) closeBtn.addEventListener('click',function(e){e.stopPropagation();setOpen(false);cap.focus();});
+    document.addEventListener('click',function(e){if(!media.contains(e.target))setOpen(false);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&wrap.classList.contains('open')){setOpen(false);cap.focus();}});
   })();
 </script>
 </body>

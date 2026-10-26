@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<!-- DRAFT TEMPLATE for legal review. Not legal advice. Have counsel review and adapt
-     (jurisdiction, GDPR/CCPA scope, analytics/cookies) before relying on this. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Notice — Griffentis</title>
+<title>Privacy Notice | Griffentis</title>
 <meta name="robots" content="noindex">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png">
+<meta name="theme-color" content="#FAF8F5">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-  :root{--ivory:#F7F6F2;--graphite:#1E2227;--soft-black:#111;--violet:#6D28D9;--muted:#5D636B;--line:#E3E1D9}
+  /* Fonts are served from this site (assets/fonts), so no visitor data goes to a font provider */
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url(assets/fonts/cormorant-garamond-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  :root{--ivory:#FAF8F5;--charcoal:#24212A;--aubergine:#34204F;--violet:#7650A4;--muted:#5F5968;--line:#E8E2D9}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Inter',system-ui,sans-serif;color:var(--graphite);background:var(--ivory);line-height:1.65;-webkit-font-smoothing:antialiased}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--charcoal);background:var(--ivory);line-height:1.65;-webkit-font-smoothing:antialiased}
   a{color:var(--violet);text-decoration:none}a:hover{text-decoration:underline}
   .wrap{max-width:760px;margin:0 auto;padding:0 32px}
   header{border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
-  .brand-logo{height:30px;width:auto;display:block}
+  /* Header spans the full width: logo at the left edge, navigation at the right edge */
+  header .wrap{max-width:none;padding:0 max(32px,3vw)}
+  .brand-logo{width:142px;height:32px;display:block}
   .back{font-size:14px;color:var(--muted)}
   main{padding:56px 0 72px}
-  h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(32px,5vw,46px);color:var(--soft-black);line-height:1.12;margin-bottom:10px}
+  h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(32px,5vw,46px);color:var(--aubergine);line-height:1.12;margin-bottom:10px}
   .updated{color:var(--muted);font-size:14px;margin-bottom:36px}
-  h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:24px;color:var(--soft-black);margin:34px 0 12px}
+  h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:24px;color:var(--aubergine);margin:34px 0 12px}
   p{margin-bottom:14px;font-size:16px}
   ul{margin:0 0 14px 22px}li{margin-bottom:8px;font-size:16px}
   .muted{color:var(--muted);font-size:15px}
@@ -34,16 +41,16 @@
 <body>
 <header>
   <div class="wrap nav">
-    <a href="index.html" aria-label="Griffentis home"><img class="brand-logo" src="assets/logo.png" alt="Griffentis" width="1264" height="285"></a>
+    <a href="index.html" aria-label="Griffentis home"><picture><source type="image/webp" srcset="assets/logo-header-142x32.webp 1x, assets/logo-header-284x64.webp 2x, assets/logo-header-426x96.webp 3x"><img class="brand-logo" src="assets/logo-header-284x64.png" alt="Griffentis" width="142" height="32"></picture></a>
     <a class="back" href="index.html">&larr; Back to home</a>
   </div>
 </header>
 <main>
   <div class="wrap">
     <h1>Privacy Notice</h1>
-    <p class="updated">Last updated: [DATE]</p>
+    <p class="updated">Last updated: October 10, 2026</p>
 
-    <p>This Privacy Notice explains how Griffentis ("Griffentis," "we," "us") handles information in connection with this website. We are committed to protecting the privacy of visitors and clients.</p>
+    <p>This Privacy Notice explains how Griffentis LLC ("Griffentis," "we," "us") handles information in connection with this website. We are committed to protecting the privacy of visitors and clients.</p>
 
     <h2>Information we collect</h2>
     <p>We collect only the information needed to respond to inquiries and operate the site:</p>
@@ -54,10 +61,10 @@
     <p class="muted">This site does not currently use cookies or analytics tracking. If that changes, this notice and any required consent mechanism will be updated.</p>
 
     <h2>Third-party services</h2>
-    <p>This site loads web fonts from Google Fonts, which may transmit your IP address to Google in order to deliver the fonts. Our website is hosted by [HOSTING PROVIDER], which processes technical data on our behalf.</p>
+    <p>Our website is hosted on GitHub Pages, a service of GitHub, Inc., which may log technical data such as IP addresses for security and operational purposes. The site does not load fonts, scripts, or other content from any other third party.</p>
 
     <h2>How we use information</h2>
-    <p>We use the information described above to respond to your inquiries, provide and improve our services, maintain security, and meet legal obligations. We do not sell your personal information.</p>
+    <p>We use the information described above to respond to your inquiries, provide and improve our services, maintain security, and meet legal obligations. We do not sell your personal information, and we do not share it for advertising purposes.</p>
 
     <h2>Sharing</h2>
     <p>We share personal information only with service providers acting on our behalf (such as hosting and email providers), or where required by law. We do not disclose confidential client information except as agreed under a separate confidentiality agreement.</p>
@@ -66,7 +73,13 @@
     <p>We retain correspondence and related information only as long as necessary for the purposes described here or as required by law.</p>
 
     <h2>Your rights</h2>
-    <p>Depending on your location, you may have rights to access, correct, delete, or restrict the processing of your personal information, or to object to processing. To exercise any of these rights, contact us at the address below. [Adapt for GDPR, UK GDPR, CCPA/CPRA, or other applicable frameworks.]</p>
+    <p>Depending on where you live, you may have the right to access, correct, or delete your personal information, to restrict or object to its processing, or to receive a copy of it. To exercise any of these rights, contact us at the address below. We will respond within the time required by applicable law, and we will not treat you differently for making a request.</p>
+
+    <h2>International visitors</h2>
+    <p>Griffentis is based in the United States, and information you send us is processed there. If you are located in the European Economic Area, the United Kingdom, or Switzerland, Griffentis LLC is the controller of your personal information. We process it on the basis of our legitimate interests in responding to inquiries and operating our business, to take steps at your request before entering into an agreement, and to comply with legal obligations. You also have the right to lodge a complaint with your local data protection authority.</p>
+
+    <h2>Do Not Track</h2>
+    <p>This site does not use cookies, analytics, or advertising technology, and it does not track visitors over time or across other websites. For that reason, it does not respond to Do Not Track browser signals.</p>
 
     <h2>Security</h2>
     <p>We take reasonable measures to protect information, but no method of transmission or storage is completely secure. Please do not send confidential, proprietary, clinical, patient, or regulated information by email until an appropriate confidentiality agreement is in place.</p>
@@ -75,14 +88,14 @@
     <p>This site is intended for a professional audience and is not directed to children, and we do not knowingly collect information from children.</p>
 
     <h2>Changes to this notice</h2>
-    <p>We may update this Privacy Notice from time to time. The "last updated" date above reflects the most recent version.</p>
+    <p>We may update this Privacy Notice from time to time. When we do, we will post the revised notice on this page and update the "last updated" date above.</p>
 
     <h2>Contact</h2>
-    <p>Questions about this notice may be directed to <a href="mailto:info@griffentis.com">info@griffentis.com</a>.</p>
+    <p>Questions about this notice may be directed to Griffentis LLC at <a href="mailto:info@griffentis.com">info@griffentis.com</a>.</p>
   </div>
 </main>
 <footer>
-  <div class="wrap">&copy; <span id="yr"></span> Griffentis. All rights reserved. &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="disclaimer.html">Disclaimer</a></div>
+  <div class="wrap">&copy; <span id="yr"></span> Griffentis LLC. All rights reserved. &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="disclaimer.html">Disclaimer</a></div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
